@@ -21,7 +21,7 @@ const Header = () => {
 
           <div className="flex flex-col mt-4 md:items-start">
             <h2 className="text-lg sm:text-xl text-gray-200">Full Stack Developer</h2>
-            <p className="font-light text-gray-300 mt-2 text-sm sm:text-base">
+            <p className="font-light text-gray-300 mt-2 -sm sm:text-base">
               Ready to work & build scalable applications
             </p>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
         </div>
 
         {/* Right Section - Profile */}
-        <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0 px-6 sm:px-12">
+        <div className="w-full md:w-1/2text flex justify-center items-center mt-10 md:mt-0 px-6 sm:px-12">
           <img
             src={assets.Profile}
             alt="Profile"

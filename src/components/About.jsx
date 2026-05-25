@@ -13,7 +13,7 @@ const About = () => {
       {/* About Text */}
       <div className="bg-white text-gray-500 font-light shadow-md rounded-xl py-8 px-6 md:px-16 lg:px-32 mt-10">
         <p>
-          I am <span className="font-light text-black under">Mantu Kumar Shah</span>, a B.Tech student in Computer Science Engineering passionate about web development and software engineering. I have experience in full-stack web development, working with technologies like <span className="font-semibold text-black/70">HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, Tailwind CSS, and Bootstrap</span>.
+          I am <span className="font-light text-black under">Mantu Kumar Shah</span>, a B.Tech student in Computer Science Engineering passionate about web development and software engineering. I have experience in full-stack web development, working with technologies like <span className="font-semibold text-black/70">HTML, CSS, JavaScript,C-sharp, React.js,Angular, Node.js, Express.js, MongoDB, Tailwind CSS, and Bootstrap</span>.
         </p>
 
         <p className="mt-4">

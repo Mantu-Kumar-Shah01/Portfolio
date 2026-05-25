@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "A responsive real estate website frontend built with React and TailwindCSS, featuring a clean UI, smooth navigation, and modern design to showcase property listings.",
       tech: ["React", "TailwindCSS", "JavaScript"],
-      link: "https://mantu-kumar-shah01.github.io/Home_DreamS/",
+      link: "https://home-dream-s.vercel.app/",
     },
     {
       img: assets.Project_3,
@@ -18,7 +18,7 @@ const Projects = () => {
       description:
         "A responsive parlour website frontend with a modern design, smooth navigation, and user-friendly interface to showcase services, pricing, and appointments.",
       tech: ["React", "TailwindCSS", "JavaScript"],
-      link: "https://mantu-kumar-shah01.github.io/Parlour/",
+      link: "https://github.com/Mantu-Kumar-Shah01/Parlour",
     },
     {
       img: assets.Project_5,
@@ -29,21 +29,23 @@ const Projects = () => {
       
     },
     {
-      img: assets.Project_4,
-      title: "Twitter Clone",
-      description:
-        "A responsive Twitter clone frontend with modern UI, interactive feed design, and smooth navigation to simulate real-time social media experience.",
-      tech: ["HTML", "TailwindCSS"],
-      link: "https://mantu-kumar-shah01.github.io/Twitter/",
+
+  img: assets.Project_4,
+  title: "Hospital Management System",
+  description:
+    "A full-stack Hospital Management System with CRUD operations for managing patients, doctors, admissions, rooms, and beds. Features efficient record management, patient-doctor assignment, and real-time hospital workflow tracking.",
+  tech: ["Angular", ".NET Core", "ASP.NET Web API", "SQL Server"],
+  link: "https://github.com/VINEFORCE-MANTU/Hospital_Crud",
+
     },
-    {
-      img: assets.Project_2,
-      title: "Netflix Clone",
-      description:
-        "A responsive Netflix clone frontend with sleek design, smooth navigation, and interactive movie/show browsing experience.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      link: "https://mantu-kumar-shah01.github.io/Movie/",
-    },
+    // {
+    //   img: assets.Project_2,
+    //   title: "Netflix Clone",
+    //   description:
+    //     "A responsive Netflix clone frontend with sleek design, smooth navigation, and interactive movie/show browsing experience.",
+    //   tech: ["HTML", "CSS", "JavaScript"],
+    //   link: "https://mantu-kumar-shah01.github.io/Movie/",
+    // },
     
   ];
 

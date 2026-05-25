@@ -7,7 +7,7 @@ import headerVideo from "./header_video.mp4";
 import Project_1 from "./home_project.png"
 import Project_2 from "./Netflix_project.png"
 import Project_3 from "./Parlour_project.png"
-import Project_4 from "./Twitter_project.png"
+import Project_4 from "./HMS_project4.png"
 import Project_5 from "./port.png"
 import Mantu_Resume from "./Mantu Kumar.Resume.pdf"
 import certificate from "./dsa.pdf"
