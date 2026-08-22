@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars } from "react-icons/fa";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -22,26 +22,26 @@ const Nav = () => {
         {/* Left Brand Logo */}
         <a href="#home" className="flex items-center gap-1.5 group">
           <span className="text-2xl font-black tracking-tighter text-black">MKS</span>
-          <span className="text-sm font-bold italic text-slate-800 font-script group-hover:text-orange-600 transition-colors">
+          <span className="text-sm font-bold italic text-slate-800 font-script group-hover:text-black transition-colors">
             mantu.dev
           </span>
         </a>
 
         {/* Center Navigation Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide text-black">
-          <a href="#home" className="hover:text-orange-600 transition-colors">
+          <a href="#home" className="hover:text-black hover:font-bold transition-colors">
             Home
           </a>
-          <a href="#work" className="hover:text-orange-600 transition-colors">
+          <a href="#work" className="hover:text-black hover:font-bold transition-colors">
             Works
           </a>
-          <a href="#about" className="hover:text-orange-600 transition-colors">
+          <a href="#about" className="hover:text-black hover:font-bold transition-colors">
             About
           </a>
-          <a href="#skill" className="hover:text-orange-600 transition-colors">
+          <a href="#skill" className="hover:text-black hover:font-bold transition-colors">
             Skills
           </a>
-          <a href="#Contact" className="hover:text-orange-600 transition-colors">
+          <a href="#Contact" className="hover:text-black hover:font-bold transition-colors">
             Contact
           </a>
         </nav>
@@ -53,7 +53,7 @@ const Nav = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
-            className="hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-bold text-black border border-slate-300/80 shadow-xs hover:bg-black hover:text-white transition-all"
+            className="hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-bold text-black border border-slate-300/80 shadow-xs hover:bg-black hover:text-white transition-colors"
           >
             GH
           </a>
@@ -63,14 +63,14 @@ const Nav = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
-            className="hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-bold text-black border border-slate-300/80 shadow-xs hover:bg-black hover:text-white transition-all"
+            className="hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-bold text-black border border-slate-300/80 shadow-xs hover:bg-black hover:text-white transition-colors"
           >
             in
           </a>
 
           <a
             href="#Contact"
-            className="rounded-full bg-black px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-md hover:bg-orange-600 transition-all hover:scale-105"
+            className="rounded-full bg-black px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-md hover:bg-slate-900 transition-colors"
           >
             Hire Me!
           </a>

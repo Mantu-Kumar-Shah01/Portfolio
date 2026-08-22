@@ -56,7 +56,7 @@ const Qualification = () => {
   const [activeTab, setActiveTab] = useState("Education");
 
   return (
-    <section className="relative w-full py-20 px-6 sm:px-10 lg:px-20 bg-slate-100 text-slate-900 border-b border-slate-200" id="qualification">
+    <section className="relative w-full py-20 px-6 sm:px-10 lg:px-20 bg-[#CBD3DC] text-slate-900 border-b border-slate-300/80" id="qualification">
       <div className="max-w-6xl mx-auto space-y-12">
         
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">

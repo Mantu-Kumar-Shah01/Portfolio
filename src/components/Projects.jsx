@@ -50,7 +50,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="w-full bg-gray-400 py-16 px-4 md:px-16 lg:px-20" id="work">
+    <section className="w-full bg-[#CBD3DC] py-16 px-4 md:px-16 lg:px-20 border-b border-slate-300/80" id="work">
       <h3 className="text-3xl mt-16 font-bold mb-4 text-center text-black">
         Projects
       </h3>

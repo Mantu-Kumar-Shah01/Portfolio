@@ -35,7 +35,7 @@ const Header = () => {
       id="home"
       className="relative h-screen max-h-screen w-full bg-[#CBD3DC] text-[#000000] overflow-hidden flex flex-col justify-between -mt-16 pt-16"
     >
-      {/* 3D WIREFRAME TORUS ORBIT RING (ORBITS IN FRONT OF PORTRAIT & RED SPOTLIGHT) */}
+      {/* 3D WIREFRAME TORUS ORBIT RING (ORBITS IN FOREGROUND AT Z-[25]) */}
       <div className="absolute inset-0 pointer-events-none z-[25] w-full h-full">
         <Hero3DText />
       </div>
@@ -69,7 +69,6 @@ const Header = () => {
             </span>
           </h1>
         </div>
-
 
         {/* ================= 3. PROFILE IMAGE CUTOUT (ZERO BACKGROUND BOX TONE) ================= */}
         <div
@@ -123,8 +122,9 @@ const Header = () => {
             border-white/20
             sm:left-[18%]
             md:left-[22%]
-            hover:scale-110
-            transition-transform
+            hover:bg-slate-900
+            transition-colors
+            cursor-pointer
           "
         >
           Developer
@@ -151,8 +151,9 @@ const Header = () => {
             border-white/20
             sm:right-[18%]
             md:right-[22%]
-            hover:scale-110
-            transition-transform
+            hover:bg-slate-900
+            transition-colors
+            cursor-pointer
           "
         >
           Software Engineer
@@ -228,10 +229,10 @@ const Header = () => {
 
           <div className="mt-4 flex items-center justify-between pt-3 border-t border-slate-100">
             <a
-              href="mailto:hello@mantu.dev"
-              className="text-xs font-bold text-black underline underline-offset-4 hover:text-[#FF302B] transition-colors"
+              href="mailto:sahharsh520@gmail.com"
+              className="text-xs font-bold text-black underline underline-offset-4 hover:text-slate-700 transition-colors"
             >
-              hello@mantu.dev
+              sahharsh520@gmail.com
             </a>
 
             {/* Small Black Circular Badge */}
@@ -253,9 +254,8 @@ const Header = () => {
                 text-white
                 text-center
                 shadow-xl
-                hover:scale-110
-                hover:bg-[#FF302B]
-                transition-all
+                hover:bg-slate-900
+                transition-colors
                 cursor-pointer
               "
             >
