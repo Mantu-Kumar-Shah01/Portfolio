@@ -50,13 +50,13 @@ const Projects = () => {
   ];
 
   return (
-    <section className="w-full bg-gray-400 py-16 px-4 md:px-16 lg:px-20" id="work">
+    <section className="w-full bg-[#CBD3DC] py-16 px-4 md:px-16 lg:px-20 border-b border-slate-300/80" id="work">
       <h3 className="text-3xl mt-16 font-bold mb-4 text-center text-black">
         Projects
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div
             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-transform hover:scale-105 duration-300 ease-in-out"
           >

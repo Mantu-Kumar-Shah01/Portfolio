@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
  
-    <div className="bg-gradient-to-b from-gray-400 to-white py-10 px-4 w-full h-full pt-20 " id="Contact">
+    <div className="bg-[#CBD3DC] py-10 px-4 w-full h-full pt-20 border-b border-slate-300/80" id="Contact">
       {/* Title */}
       <div className="title mb-8 ">
         <p className=" text-3xl  mt-15  mb-4   text-center text-black font-bold hover:scale-110 transition-transform">
