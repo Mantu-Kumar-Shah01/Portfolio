@@ -8,16 +8,3 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif; /* Headings */
 }
 
-.font-script {
-  font-family: "Caveat", cursive;
-}
-
-@keyframes pulse-cursor {
-  0%, 100% { border-color: rgba(255, 255, 255, 0.95); }
-  50% { border-color: rgba(255, 255, 255, 0.1); }
-}
-
-.animate-pulse-cursor {
-  animation: pulse-cursor 0.75s infinite ease-in-out;
-}
-

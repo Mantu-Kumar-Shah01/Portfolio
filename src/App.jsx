@@ -1,33 +1,32 @@
+import react from 'react'
 import "./index.css";
-import Nav from './components/Nav';
-import Header from './components/Header';
-import About from './components/About';
+import Nav from './components/Nav'
+import Header from './components/Header'
+import About from './components/About'
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Footer from './components/Footer'
 import { ToastContainer } from 'react-toastify';
 import Projects from './components/Projects';
-import Qualification from './components/Qualification';
-import SiteParticles from './components/SiteParticles';
+import Qualification from './components/Qualification.';
+
 
 function App() {
-  return (
-    <div className="relative w-full bg-[#CBD3DC]">
-      <ToastContainer />
-      
-      {/* Small 3D Particle Dust Field Across Entire Site */}
-      <SiteParticles />
+ 
 
-      <Nav />
-      <Header />
-      <About />
-      <Qualification />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
-  );
+  return (
+    <>
+    <ToastContainer />
+      <Nav/>
+      <Header/>
+      <About/>
+      <Qualification/>
+      <Projects/>
+      <Skills/>
+      <Contact/>
+      <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App
