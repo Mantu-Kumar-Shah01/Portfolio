@@ -29,7 +29,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="bg-[#CBD3DC] pt-20 px-6 sm:px-20 pb-20 shadow-xs text-gray-700 w-full h-full border-b border-slate-300/80" id="skill">
+    <div className="bg-gray-400  pt-20 px-6 sm:px-20  shadow-md text-gray-700 w-full h-full " id="skill">
       <h2 className="text-3xl   mt-15 font-bold mb-4 text-center text-black"> My Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map((skill) => (

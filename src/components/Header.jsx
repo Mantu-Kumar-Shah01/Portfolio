@@ -1,272 +1,59 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { assets } from "../assets/assets";
-import Hero3DText from "./Hero3DText";
-
-const fullText = "DEVELOPER";
 
 const Header = () => {
-  const [displayedText, setDisplayedText] = useState("");
-  const [charIndex, setCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  useEffect(() => {
-    const typingSpeed = isDeleting ? 70 : 150;
-
-    const handleTyping = () => {
-      if (!isDeleting && charIndex < fullText.length) {
-        setDisplayedText(fullText.substring(0, charIndex + 1));
-        setCharIndex((prev) => prev + 1);
-      } else if (!isDeleting && charIndex === fullText.length) {
-        setTimeout(() => setIsDeleting(true), 2000);
-      } else if (isDeleting && charIndex > 0) {
-        setDisplayedText(fullText.substring(0, charIndex - 1));
-        setCharIndex((prev) => prev - 1);
-      } else if (isDeleting && charIndex === 0) {
-        setIsDeleting(false);
-      }
-    };
-
-    const timer = setTimeout(handleTyping, typingSpeed);
-    return () => clearTimeout(timer);
-  }, [charIndex, isDeleting]);
-
   return (
-    <section
-      id="home"
-      className="relative h-screen max-h-screen w-full bg-[#CBD3DC] text-[#000000] overflow-hidden flex flex-col justify-between -mt-16 pt-16"
-    >
-      {/* 3D WIREFRAME TORUS ORBIT RING (ORBITS IN FOREGROUND AT Z-[25]) */}
-      <div className="absolute inset-0 pointer-events-none z-[25] w-full h-full">
-        <Hero3DText />
-      </div>
+    <section className="relative w-full h-screen overflow-hidden bg-gray-400" id="home">
+     
+     
 
-      {/* ================= MAIN HERO CANVAS CONTENT ================= */}
-      <main className="relative flex-1 flex items-center justify-center w-full h-full">
+      {/* Dark Overlay */}
+      <div className="absolute top-0 left-0 w-full h-fullz-10"></div>
 
-        {/* ================= 1. MASSIVE BACKGROUND TYPOGRAPHY WITH PULSE CURSOR TYPEWRITER ANIMATION ================= */}
-        <div className="pointer-events-none absolute inset-x-0 top-[11%] sm:top-[9%] lg:top-[8%] z-0 w-full flex justify-center items-center select-none overflow-hidden px-6 sm:px-10 lg:px-14">
-          <h1
-            className="
-              whitespace-nowrap
-              text-[17vw]
-              sm:text-[18vw]
-              lg:text-[18.8vw]
-              font-black
-              uppercase
-              leading-none
-              tracking-[-0.08em]
-              scale-y-[1.18]
-              origin-center
-              text-white
-              text-center
-              flex
-              items-center
-              justify-center
-            "
-          >
-            <span className="font-extrabold animate-pulse-cursor border-white border-r-[4px] sm:border-r-[6px] lg:border-r-[8px] inline-flex pr-1.5 text-white">
-              {displayedText}
-            </span>
+      {/* Content */}
+      <div className="relative z-20 flex flex-col md:flex-row justify-center items-center w-full h-full px-6 sm:px-10 md:px-16 lg:px-32">
+
+        {/* Left Section - Info */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left mt-12 md:mt-0">
+          <h1 className="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug text-white drop-shadow-lg">
+            Hi, I'm <br /> <span className="text-gray-900 shadow-gray-400">Mantu Kumar Shah</span>
           </h1>
-        </div>
 
-        {/* ================= 3. PROFILE IMAGE CUTOUT (ZERO BACKGROUND BOX TONE) ================= */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[44%]
-            z-20
-            w-[220px]
-            -translate-x-1/2
-            -translate-y-1/2
-            sm:w-[270px]
-            md:w-[320px]
-            lg:w-[360px]
-            pointer-events-none
-          "
-        >
-          <img
-            src={assets.Profile}
-            alt="Mantu Kumar Shah Software Developer"
-            className="
-              block
-              h-auto
-              w-full
-              object-contain
-              filter
-              contrast-105
-              [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]
-            "
-          />
-        </div>
+          <div className="flex flex-col mt-4 md:items-start">
+            <h2 className="text-lg sm:text-xl text-gray-200">Full Stack Developer</h2>
+            <p className="font-light text-gray-300 mt-2 -sm sm:text-base">
+              Ready to work & build scalable applications
+            </p>
+          </div>
 
-        {/* ================= 4. FLOATING LABEL — LEFT ================= */}
-        <div
-          className="
-            absolute
-            left-[10%]
-            top-[34%]
-            z-40
-            rotate-[-8deg]
-            rounded-full
-            bg-black
-            px-4
-            py-1.5
-            text-xs
-            font-bold
-            tracking-wide
-            text-white
-            shadow-2xl
-            border
-            border-white/20
-            sm:left-[18%]
-            md:left-[22%]
-            hover:bg-slate-900
-            transition-colors
-            cursor-pointer
-          "
-        >
-          Developer
-        </div>
-
-        {/* ================= 5. FLOATING LABEL — RIGHT ================= */}
-        <div
-          className="
-            absolute
-            right-[10%]
-            top-[22%]
-            z-40
-            rotate-[10deg]
-            rounded-full
-            bg-black
-            px-4
-            py-1.5
-            text-xs
-            font-bold
-            tracking-wide
-            text-white
-            shadow-2xl
-            border
-            border-white/20
-            sm:right-[18%]
-            md:right-[22%]
-            hover:bg-slate-900
-            transition-colors
-            cursor-pointer
-          "
-        >
-          Software Engineer
-        </div>
-
-        {/* ================= 7. LARGE BOLD BOTTOM LEFT TITLE ================= */}
-        <div
-          className="
-            absolute
-            bottom-[6%]
-            sm:bottom-[7%]
-            lg:bottom-[8%]
-            left-6
-            sm:left-10
-            md:left-12
-            lg:left-14
-            z-40
-            w-max
-            max-w-[44%]
-          "
-        >
-          <p className="mb-1 text-xs sm:text-sm font-bold text-slate-800 tracking-wide">
-            Hi 👋, I'm Mantu
-          </p>
-
-          <h2
-            className="
-              text-[32px]
-              font-black
-              uppercase
-              leading-[0.88]
-              tracking-[-0.04em]
-              text-black
-              sm:text-[44px]
-              md:text-[54px]
-              lg:text-[64px]
-            "
-          >
-            SOFTWARE
-            <br />
-            DEVELOPER
-            <br />
-            & ENGINEER.
-          </h2>
-        </div>
-
-        {/* ================= 8. BOTTOM RIGHT CARD ================= */}
-        <div
-          className="
-            absolute
-            bottom-[6%]
-            sm:bottom-[7%]
-            lg:bottom-[8%]
-            right-6
-            sm:right-10
-            md:right-14
-            lg:right-14
-            z-40
-            w-[260px]
-            sm:w-[310px]
-            rounded-3xl
-            bg-white
-            p-5
-            sm:p-6
-            shadow-2xl
-            border
-            border-slate-200/80
-          "
-        >
-          <p className="text-xs sm:text-sm font-semibold leading-relaxed text-slate-900 pr-3">
-            Full Stack Developer building modern, scalable and interactive web applications.
-          </p>
-
-          <div className="mt-4 flex items-center justify-between pt-3 border-t border-slate-100">
-            <a
-              href="mailto:sahharsh520@gmail.com"
-              className="text-xs font-bold text-black underline underline-offset-4 hover:text-slate-700 transition-colors"
+          {/* Buttons */}
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mt-6">
+            <a href="#Contact"
+              className="border border-gray-300 text-white rounded-md px-5 py-2 sm:px-6 sm:py-2.5 hover:bg-gray-200 hover:text-gray-900 transition shadow-md cursor-pointer"
+              
             >
-              sahharsh520@gmail.com
+              Contact Me
             </a>
 
-            {/* Small Black Circular Badge */}
             <a
-              href="#Contact"
-              aria-label="Let's Build"
-              className="
-                flex
-                h-11
-                w-11
-                items-center
-                justify-center
-                rounded-full
-                bg-black
-                text-[8px]
-                font-extrabold
-                uppercase
-                leading-[1.1]
-                text-white
-                text-center
-                shadow-xl
-                hover:bg-slate-900
-                transition-colors
-                cursor-pointer
-              "
+              href={assets.Mantu_Resume || "#"}
+              download="Mantu_Kumar_Shah_Resume.pdf"
+              className="border border-gray-300 text-white rounded-md px-5 py-2 sm:px-6 sm:py-2.5 hover:bg-gray-200 hover:text-gray-900 transition shadow-md"
             >
-              LET'S
-              <br />
-              BUILD
+              Download CV
             </a>
           </div>
         </div>
 
-      </main>
+        {/* Right Section - Profile */}
+        <div className="w-full md:w-1/2text flex justify-center items-center mt-10 md:mt-0 px-6 sm:px-12">
+          <img
+            src={assets.Profile}
+            alt="Profile"
+            className="w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full shadow-xl border-4 border-gray-300 object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
 };
