@@ -56,7 +56,7 @@ const Projects = () => {
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div
             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-transform hover:scale-105 duration-300 ease-in-out"
           >
